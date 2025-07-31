@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="256" fill="#FF7F50" />
+  
+  <!-- Lunchbox Shape -->
+  <rect x="128" y="176" width="256" height="192" rx="16" fill="#FFFFFF" />
+  
+  <!-- Lunchbox Handle -->
+  <path d="M192 176 Q256 96 320 176" stroke="#FFFFFF" stroke-width="16" fill="none" />
+  
+  <!-- Lunchbox Divider -->
+  <line x1="128" y1="240" x2="384" y2="240" stroke="#FF7F50" stroke-width="4" />
+  
+  <!-- Food Items (Stylized) -->
+  <circle cx="192" cy="208" r="16" fill="#FCD34D" /> <!-- Roti -->
+  <circle cx="240" cy="208" r="16" fill="#FCD34D" /> <!-- Roti -->
+  <rect x="176" y="272" width="64" height="48" rx="8" fill="#6EE7B7" /> <!-- Sabzi -->
+  <rect x="272" y="272" width="64" height="48" rx="8" fill="#93C5FD" /> <!-- Dal/Rice -->
+  
+  <!-- Heart Symbol (Mom's Love) -->
+  <path d="M256 320 Q224 288 192 320 Q160 352 256 384 Q352 352 320 320 Q288 288 256 320" fill="#FF5A5A" />
+</svg>
