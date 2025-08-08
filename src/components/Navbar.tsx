@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import * as FaIcons from 'react-icons/fa';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,12 +16,8 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <img
-                className="h-10 w-auto"
-                src="/logo.svg"
-                alt="MomMagic Logo"
-              />
-              <span className="ml-2 text-xl font-display font-bold text-primary">MomMagic</span>
+              {FaIcons.FaUtensils({ size: 24, className: "text-primary" })}
+               <span className="ml-2 text-xl font-display font-bold text-primary">Dabbzo</span>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <Link to="/" className={`inline-flex items-center px-1 pt-1 border-b-2 ${location.pathname === '/' ? 'border-primary' : 'border-transparent'} ${isActive('/')}`}>
