@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { home_cooked_meal } from '../assets/images/images';
+import * as FaIcons from 'react-icons/fa';
 
 const HomePage: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Homemade Meals with a Mother's Touch
+              Dabbzo: Homemade Meals with a Mother's Touch
             </h1>
             <p className="text-xl mb-8">
               Affordable, nutritious, and home-style meals delivered to your doorstep.
@@ -44,19 +45,84 @@ const HomePage: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">1</div>
+              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                 {FaIcons.FaUtensils({ size: 20 })}
+               </div>
               <h3 className="text-xl font-semibold mb-2">Choose Your Plan</h3>
               <p className="text-gray-600">Select from our variety of meal plans that suit your taste and budget.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">2</div>
+              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                 {FaIcons.FaBox({ size: 20 })}
+               </div>
               <h3 className="text-xl font-semibold mb-2">Subscribe & Customize</h3>
               <p className="text-gray-600">Pick your subscription duration and customize your meals as needed.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">3</div>
+              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                 {FaIcons.FaStore({ size: 20 })}
+               </div>
               <h3 className="text-xl font-semibold mb-2">Enjoy Daily Delivery</h3>
               <p className="text-gray-600">Receive fresh, home-cooked meals at your doorstep every day.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Models Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Core Service Models</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Dabbzo offers three flexible ways to enjoy delicious home-cooked meals.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-4">
+                {FaIcons.FaUtensils({ size: 20 })}
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Centralized Kitchen Orders</h3>
+              <p className="text-gray-600 mb-4">
+                Order directly from our central kitchen. We prepare and deliver meals ourselves, enabling batch deliveries for better efficiency.
+              </p>
+              <Link
+                to="/meal-plans"
+                className="text-primary hover:text-primary-dark font-medium"
+              >
+                Learn more →
+              </Link>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 mb-4">
+                {FaIcons.FaStore({ size: 20 })}
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Vendor Subscription Model</h3>
+              <p className="text-gray-600 mb-4">
+                Subscribe to meal plans from listed vendors/home chefs. We handle pickup from the vendor's location and manage delivery.
+              </p>
+              <Link
+                to="/vendors"
+                className="text-primary hover:text-primary-dark font-medium"
+              >
+                Learn more →
+              </Link>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 mb-4">
+                {FaIcons.FaBox({ size: 20 })}
+              </div>
+              <h3 className="text-xl font-semibold mb-2">On-Demand Last-Minute Orders</h3>
+              <p className="text-gray-600 mb-4">
+                Order from partner restaurants, vendors, or kitchens listed for quick preparation. Deliveries handled by third-party services.
+              </p>
+              <Link
+                to="/meal-plans"
+                className="text-primary hover:text-primary-dark font-medium"
+              >
+                Learn more →
+              </Link>
             </div>
           </div>
         </div>
@@ -394,7 +460,7 @@ const HomePage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-16 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to Experience Home-Cooked Goodness?</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Ready to Experience Dabbzo's Home-Cooked Goodness?</h2>
           <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
             Join thousands of satisfied customers enjoying delicious, nutritious meals every day.
           </p>
